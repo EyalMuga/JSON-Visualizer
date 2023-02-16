@@ -12,14 +12,6 @@ To install the required libraries, run the following command:
 
 ```pip install graphviz treelib```
 
-# Executing the script
-To execute the script, run the following command:
-
-``` bash 
-python json_visualizer.py [input_file_path]
-```
-The input_file_path parameter is optional. If no input file path is provided, the script will prompt you to enter the JSON data.
-
 # Features
 Converts JSON data into a tree structure
 Visualizes the tree using Graphviz
