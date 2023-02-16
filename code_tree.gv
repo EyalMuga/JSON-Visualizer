@@ -1,0 +1,44 @@
+// code tree
+digraph {
+	0 [label="+"]
+	1 [label=menu]
+	0 -> 1
+	2 [label=id]
+	1 -> 2
+	3 [label=file]
+	2 -> 3
+	4 [label=value]
+	1 -> 4
+	5 [label=File]
+	4 -> 5
+	6 [label=popup]
+	1 -> 6
+	7 [label=menuitem]
+	6 -> 7
+	8 [label="+"]
+	7 -> 8
+	9 [label=value]
+	8 -> 9
+	10 [label=New]
+	9 -> 10
+	11 [label=onclick]
+	8 -> 11
+	12 [label="CreateNewDoc()"]
+	11 -> 12
+	13 [label=value]
+	8 -> 13
+	14 [label=Open]
+	13 -> 14
+	15 [label=onclick]
+	8 -> 15
+	16 [label="OpenDoc()"]
+	15 -> 16
+	17 [label=value]
+	8 -> 17
+	18 [label=Close]
+	17 -> 18
+	19 [label=onclick]
+	8 -> 19
+	20 [label="CloseDoc()"]
+	19 -> 20
+}
