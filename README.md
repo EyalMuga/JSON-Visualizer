@@ -1,25 +1,37 @@
-# JSON-Visualizer
-The code in this project provides functions for converting a JSON object into a tree structure and visualizing the
-resulting tree using Graphviz. The main functions are json_2_tree and visualize_tree.
-Here is a brief overview of each function:
+# JSON Visualizer
+JSON Visualizer is a Python script that converts JSON data into a tree structure and visualizes it using Graphviz. It allows you to quickly understand the structure of your JSON data and identify any issues.
 
-# create_node: creates a node in the tree with the given string label and a unique numerical identifier.
-The function also increments a counter to keep track of the number of nodes in the tree.
+# Getting Started
+# Dependencies
+This script requires the following libraries to be installed:
 
-# to_compact_string: recursively converts a JSON object to a compact string representation.
-This function is used by json_2_tree to represent single-key dictionaries as a single node in the tree.
+* Graphviz
+* Treelib
+# Installing
+To install the required libraries, run the following command:
 
-# to_compact: converts a JSON object to a compact string representation using to_compact_string,
-and then creates a single node in the tree with that string as its label.
-This function is used by json_2_tree to represent single-key dictionaries as a single node in the tree.
+```pip install graphviz treelib```
 
-# json_2_tree: recursively converts a JSON object to a tree structure using the create_node and to_compact functions.
-This function creates a new node in the tree for each key-value pair in a dictionary and each element in a list. 
-It also uses the to_compact function to represent single-key dictionaries as a single node in the tree.
+# Executing the script
+To execute the script, run the following command:
 
-# delete_node: removes a node from the tree and all its children.
+``` bash 
+python json_visualizer.py [input_file_path]
+```
+The input_file_path parameter is optional. If no input file path is provided, the script will prompt you to enter the JSON data.
 
-# visualize_tree: creates a Digraph object from the tree and renders it using Graphviz.
-The resulting visualization is saved to a file named "code_tree.gv". The visualization is also displayed in a window,
-if view=True is passed to the function.
+# Features
+Converts JSON data into a tree structure
+Visualizes the tree using Graphviz
+Supports compact display of single-key dictionaries
+Supports custom symbol for nodes that represent lists
+Allows you to delete nodes from the tree
+Allows you to get the ancestors of a node that contain a keyword
+
+# Example usage
+An example to visaulize the json file
+<img width="1384" alt="Screenshot 2023-02-16 at 9 00 20" src="https://user-images.githubusercontent.com/117386089/219291644-fbbf4042-b623-4587-8a49-6dce71a08a5e.png">
+
+# Json2tree function example
+<img width="290" alt="Screenshot 2023-02-16 at 9 02 39" src="https://user-images.githubusercontent.com/117386089/219292247-99496de9-9b18-4d21-9e21-acb8a11da797.png">
 
